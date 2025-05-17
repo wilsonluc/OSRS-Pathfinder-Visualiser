@@ -1,12 +1,21 @@
-# Explv.github.io
+# OSRS Pathfinding Visualiser
 
-### Dax Path
+This project serves as an interactive interface for the OSRS-Pathfinder Lambda function
 
-The Dax Path tool makes use of @itsdax great web walking API https://github.com/itsdax/Runescape-Web-Walker-Engine
-All credits to him.
+## Running the Project
 
-### Generating map tiles
+To run this project locally, you must use a local web server.
 
-1. See instructions in https://github.com/Explv/osrs_map_tiles#generating-tiles
+### Python
 
-2. Test the map to ensure coordinates produced for a selection of OSRS tiles are correct, you can compare with the live version of https://explv.github.io/
+If you have Python installed, run the following in your project directory:
+
+```bash
+python -m http.server 8000
+```
+
+Then open your browser and navigate to:
+```
+http://localhost:8000/
+```
+
