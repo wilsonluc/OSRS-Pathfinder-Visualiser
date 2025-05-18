@@ -17,6 +17,10 @@ const errorMessageMapping = {
 };
 
 export function getPath({start, end, onSuccess, onError}) {
+        const useFairyRings = document.getElementById("fairy-ring").checked;
+        const useSpiritTrees = document.getElementById("spirit-tree").checked;
+        console.log("F: " + useFairyRings);
+        console.log("S: " + useSpiritTrees);
     $.ajax({
         url: API_URL,
         type: 'POST',
@@ -26,7 +30,9 @@ export function getPath({start, end, onSuccess, onError}) {
             "sourceZ": start.z,
             "destinationX": end.x,
             "destinationY": end.y,
-            "destinationZ": end.z
+            "destinationZ": end.z,
+            "isFairyRingsUnlocked": useFairyRings,
+            "isSpiritTreesUnlocked": useSpiritTrees
         }),
         dataType: 'json',
         contentType: 'application/json',
