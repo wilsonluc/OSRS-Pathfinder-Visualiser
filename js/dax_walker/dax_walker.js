@@ -31,8 +31,8 @@ export function getPath({start, end, onSuccess, onError}) {
             "destinationX": end.x,
             "destinationY": end.y,
             "destinationZ": end.z,
-            "isFairyRingsUnlocked": useFairyRings,
-            "isSpiritTreesUnlocked": useSpiritTrees
+            "fairyRingsUnlocked": useFairyRings,
+            "spiritTreesUnlocked": useSpiritTrees
         }),
         dataType: 'json',
         contentType: 'application/json',
