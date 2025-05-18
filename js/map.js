@@ -55,16 +55,16 @@ $(document).ready(function () {
 
     map.addControl(new TitleLabel());
     map.addControl(new CoordinatesControl());
-    map.addControl(new RegionBaseCoordinatesControl());
-    map.addControl(new LocalCoordinatesControl());
-    map.addControl(L.control.zoom());
+    // map.addControl(new RegionBaseCoordinatesControl());
+    // map.addControl(new LocalCoordinatesControl());
+    // map.addControl(L.control.zoom());
     map.addControl(new PlaneControl());
     map.addControl(new LocationLookupControl());
     map.addControl(new MapLabelControl());
-    // map.addControl(new CollectionControl({ position: 'topright' }));
-    map.addControl(new RegionLookupControl());
-    map.addControl(new GridControl());
-    map.addControl(new RegionLabelsControl());
+    map.addControl(new CollectionControl({ position: 'topright' }));
+    // map.addControl(new RegionLookupControl());
+    // map.addControl(new GridControl());
+    // map.addControl(new RegionLabelsControl());
 
     var prevMouseRect, prevMousePos;
     map.on('mousemove', function (e) {

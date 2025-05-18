@@ -1,6 +1,6 @@
 # OSRS Pathfinding Visualiser
 
-This project serves as an interactive interface for the OSRS-Pathfinder Lambda function
+This project serves as an interactive interface for the [OSRS-Pathfinder Lambda function](https://github.com/wilsonluc/OSRS-Pathfinder)
 
 ## Running the Project
 

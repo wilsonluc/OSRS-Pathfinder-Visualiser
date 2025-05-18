@@ -115,6 +115,9 @@ export var MapLabelControl = L.Control.extend({
             this._mapLabelsCanvas.drawLayer();
         }, this);
 
+        // Hide button
+        container.style.display = 'none';
+
         return container;
     },
 
